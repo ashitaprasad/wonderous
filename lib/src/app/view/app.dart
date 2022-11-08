@@ -7,10 +7,7 @@ import 'package:wonders/src/view.dart';
 /// The WonderApp
 class WondersApp extends AppStatefulWidget {
   /// No progress indicator while starting up.
-  WondersApp({
-    super.key,
-    super.circularProgressIndicator = false,
-  });
+  WondersApp({Key? key, circularProgressIndicator = false}) : super(key: key);
 
   @override
   AppState createAppState() => AppState<WondersApp>(
